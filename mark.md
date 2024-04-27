@@ -47,5 +47,6 @@ hotel_id - айди гостиницы, INT
 room_id - айди номера, INT
 room_type - тип номера, VARCHAR(50)
 price - цена номера за сутки, VARCHAR(50)
-
+![](screens/Room1.png)
+![](screens/Room2.png)
 	
