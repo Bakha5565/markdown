@@ -66,4 +66,4 @@ SELECT price
 FROM Hotel
 Order by price DESC
 ```
-![](screens/Order BY.png)
+![](screens/OrderBY.png)
