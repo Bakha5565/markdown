@@ -58,6 +58,12 @@ price - цена номера за сутки, VARCHAR(50)
  
  SELECT email FROM Guest
 ```
+![](screens/Union.png)
 
-* 
-
+* Отработал с командой ORDER BY в таблице Hotel, отсортировал цену по убыванию
+```
+SELECT price
+FROM Hotel
+Order by price DESC
+```
+![](screens/Order BY.png)
