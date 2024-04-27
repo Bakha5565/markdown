@@ -32,8 +32,8 @@ id - создается по умолчанию, INT
 name - имя клиента, VARCHAR(50)
 email - электронная почта клиента, VARCHAR(50)
 phone_number - номер телефона клиента, VARCHAR(20)
-
-
+![](screens/Guest1.png)
+![](screens/Guest2.png)
 
 Таблица Hotel состоит из следующих атрибутов:
 id - создается  по умолчанию, INT
