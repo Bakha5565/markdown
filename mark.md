@@ -49,4 +49,12 @@ room_type - тип номера, VARCHAR(50)
 price - цена номера за сутки, VARCHAR(50)
 ![](screens/Room1.png)
 ![](screens/Room2.png)
-	
+
+Объединил две разные строки в таблице Guest с помощью команды UNION
+```
+ SELECT name From Guest
+ 
+ UNION
+ 
+ SELECT email FROM Guest
+```
