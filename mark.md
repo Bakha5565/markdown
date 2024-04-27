@@ -22,6 +22,7 @@
 	check_in_date - айди к таблице Booking, Date
 	check_in_out - айди к таблице Booking, Date
 	Total_price - цена, float
+ ![](screens/booking1.png)
 
 
 
@@ -38,5 +39,5 @@
 	id - создается  по умолчанию, INT
 	name - название гостиницы, VARCHAR(50)
 	addrees - адрес гостиницы, VARCHAR(100)
-	city - город в котором находится гостиница, VARCHAR(500
+	city - город в котором находится гостиница, VARCHAR(500)
 	
