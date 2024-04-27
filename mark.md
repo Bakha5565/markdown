@@ -50,7 +50,7 @@ price - цена номера за сутки, VARCHAR(50)
 ![](screens/Room1.png)
 ![](screens/Room2.png)
 
-Объединил две разные строки в таблице Guest с помощью команды UNION
+* Объединил две разные строки в таблице Guest с помощью команды UNION
 ```
  SELECT name From Guest
  
@@ -58,3 +58,6 @@ price - цена номера за сутки, VARCHAR(50)
  
  SELECT email FROM Guest
 ```
+
+* 
+
