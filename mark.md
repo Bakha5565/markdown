@@ -75,4 +75,17 @@ Order by price DESC
     GROUP by name
     HAVING price > 500
 ```
+![](screens/Having.png)
 
+* 6.1 Демонстрация работы вложенных запросов - Select
+  Нашел имена гостей, которые сделали бронирования га сумму больше средней стоимости всех бронирований.
+```
+  SELECT Guest.name
+FROM Guest
+JOIN Booking ON Guest.id = Booking.guest_id
+GROUP BY Guest.name
+HAVING AVG(Booking.total_price) > (
+    SELECT AVG(total_price)
+    FROM Booking
+);
+```
