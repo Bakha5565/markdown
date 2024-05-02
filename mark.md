@@ -89,3 +89,4 @@ HAVING AVG(Booking.total_price) > (
     FROM Booking
 );
 ```
+![](screens/Select.png)
