@@ -67,3 +67,12 @@ FROM Hotel
 Order by price DESC
 ```
 ![](screens/OrderBY.png)
+
+* Также с командой Having проработал
+```
+    SELECT price
+    FROM Hotel
+    GROUP by name
+    HAVING price > 500
+```
+
