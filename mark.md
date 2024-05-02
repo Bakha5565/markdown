@@ -68,7 +68,7 @@ Order by price DESC
 ```
 ![](screens/OrderBY.png)
 
-* Также с командой Having проработал
+* Также проработал с командой Having проработал
 ```
     SELECT price
     FROM Hotel
