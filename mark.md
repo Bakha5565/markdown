@@ -130,3 +130,5 @@ select sum(price)
 from Hotel
 ```
 ![](screens/Агрег.функции.PNG)
+
+7.2 Ранжирующие функии
