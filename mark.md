@@ -99,5 +99,34 @@ from Hotel
 WHERE price = (
   SELECT min(price) 
   FROM Hotel);
+
 ```
 ![](screens/where.png)
+
+* 7. Демонстрация работы оконных функций
+  7.1 Агрегатные функции
+```
+select max(price)
+from Hotel
+
+UNION
+
+SELECT min(price)
+FROM Hotel
+
+UNION
+
+SELECT avg(price)
+from Hotel
+
+UNION
+
+SELECT count(price)
+from Hotel
+
+UNION
+
+select sum(price)
+from Hotel
+```
+![](screens/Агрег.функции.PNG)
