@@ -100,3 +100,4 @@ WHERE price = (
   SELECT min(price) 
   FROM Hotel);
 ```
+![](screens/where.png)
