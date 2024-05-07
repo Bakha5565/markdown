@@ -90,3 +90,13 @@ HAVING AVG(Booking.total_price) > (
 );
 ```
 ![](screens/select.png)
+
+* 6.2  Демонстрация работы вложенных запросов - Where
+
+```
+SELECT price
+from Hotel
+WHERE price = (
+  SELECT min(price) 
+  FROM Hotel);
+```
