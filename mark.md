@@ -138,4 +138,4 @@ SELECT  city, name,
 	RANK() OVER ( PARTITION BY name ORDER BY city) AS 'rank'
 FROM Hotel
 ```
-![](screens/Агрег.функции.PNG)
+![](screens/ранжирующиефункции.png)
