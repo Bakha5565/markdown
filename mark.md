@@ -149,8 +149,8 @@ FROM Hotel
 ```
 ![](screens/функциясмещения.png)
 
-* ## 8 Виды JOIN-ов
-* # 8.1 INNER JOIN
+* # 8 Виды JOIN-ов
+* ## 8.1 INNER JOIN
 Inner join возвращает только строки, имеющие совпадение в обеих таблицах по guest_id.
 Получаем список всех бронирований с именем гостя, сделавшего бронирование.
 ```
@@ -165,7 +165,7 @@ INNER JOIN Guest AS Guest ON Booking.guest_id = Guest.id;
 ```
 ![](screens/INNERJOIN.png)
 
-* # 8.2 LEFT JOIN
+* ## 8.2 LEFT JOIN
 
 Left join возвращает все строки из таблицы Booking (левая таблица) и совпадающие строки из Guest (правая таблица).
 ```
