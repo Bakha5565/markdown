@@ -77,7 +77,7 @@ Order by price DESC
 ```
 ![](screens/Having.png)
 
-* 6.1 Демонстрация работы вложенных запросов - Select
+* # 6.1 Демонстрация работы вложенных запросов - Select
   Нашел имена гостей, которые сделали бронирования га сумму больше средней стоимости всех бронирований.
 ```
   SELECT Guest.name
@@ -91,7 +91,7 @@ HAVING AVG(Booking.total_price) > (
 ```
 ![](screens/select.png)
 
-* 6.2  Демонстрация работы вложенных запросов - Where
+* # 6.2  Демонстрация работы вложенных запросов - Where
 
 ```
 SELECT price
@@ -103,8 +103,8 @@ WHERE price = (
 ```
 ![](screens/where.png)
 
-* 7. Демонстрация работы оконных функций
- * 7.1 Агрегатные функции
+* ## 7. Демонстрация работы оконных функций
+ * # 7.1 Агрегатные функции
 ```
 select max(price)
 from Hotel
@@ -131,7 +131,7 @@ from Hotel
 ```
 ![](screens/Агрег.функции.PNG)
 
-* 7.2 Ранжирующие функии
+* # 7.2 Ранжирующие функии
 
 ```
 SELECT  city, name,
@@ -140,7 +140,7 @@ FROM Hotel
 ```
 ![](screens/ранжирующиефункции.png)
 
-* 7.3. Функции смещения
+* # 7.3. Функции смещения
 
 ```
 SELECT name, price,
@@ -148,3 +148,19 @@ SELECT name, price,
 FROM Hotel
 ```
 ![](screens/функциясмещения.png)
+
+* ## 8 Виды JOIN-ов
+* # 8.1 INNER JOIN
+Получаем список всех бронирований с именем гостя, сделавшего бронирование.
+```
+SELECT
+    Guest.name AS guest_name,
+    Booking.room_id,
+    Booking.check_in_date,
+    Booking.check_out_date,
+    Booking.total_price
+FROM Booking AS Booking
+INNER JOIN Guest AS Guest ON Booking.guest_id = Guest.id;
+```
+
+
