@@ -139,3 +139,12 @@ SELECT  city, name,
 FROM Hotel
 ```
 ![](screens/ранжирующиефункции.png)
+
+* 7.3. Функции смещения
+
+```
+SELECT name, price,
+	LAG(price) OVER(PARTITION BY name ORDER BY price) AS 'lag'
+FROM Hotel
+```
+![](screens/функциясмещения.png)
