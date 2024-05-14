@@ -162,5 +162,5 @@ SELECT
 FROM Booking AS Booking
 INNER JOIN Guest AS Guest ON Booking.guest_id = Guest.id;
 ```
-![](screens/iINNERJOIN.PNG)
+![](screens/INNERJOIN.png)
 
