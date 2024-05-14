@@ -132,3 +132,10 @@ from Hotel
 ![](screens/Агрег.функции.PNG)
 
 7.2 Ранжирующие функии
+
+```
+SELECT  city, name,
+	RANK() OVER ( PARTITION BY name ORDER BY city) AS 'rank'
+FROM Hotel
+```
+![](screens/Агрег.функции.PNG)
