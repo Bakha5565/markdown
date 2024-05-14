@@ -193,3 +193,5 @@ LEFT JOIN Guest AS Guest ON Booking.guest_id = Guest.id;
     END AS popularity_level
 FROM Hotel AS Hotel;
 ```
+
+![](screens/Case.png)
