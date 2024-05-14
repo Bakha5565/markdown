@@ -179,3 +179,17 @@ FROM Booking AS Booking
 LEFT JOIN Guest AS Guest ON Booking.guest_id = Guest.id;
 ```
 ![](screens/leftjoin.png)
+
+* ## 9 Демонстрация работы оператора CASE
+  Оператор Case расставляет гостиницы по популяризации.
+```
+  SELECT
+    Hotel.name AS hotel_name,
+    Hotel.rating,
+    CASE
+        WHEN Hotel.rating <= 4 THEN 'Высокий'
+        WHEN Hotel.rating >= 4.5 THEN 'Средний'
+        WHEN Hotel.rating >= 3 THEN 'Низкий'
+    END AS popularity_level
+FROM Hotel AS Hotel;
+```
