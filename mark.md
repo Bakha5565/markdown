@@ -1,6 +1,7 @@
 ## 1. Мадомилов Бахманёр Шахриёрович, ИС 22/9-1
 
 ## Гостиница
+###### ![](screens/Hotel_bd.png)
 Моя база данных про гостиницу
 База данных имеет 4 таблицы
 
@@ -20,8 +21,8 @@ room_id - айди к таблице Room, INT
 check_in_date - айди к таблице Booking, Date
 check_in_out - айди к таблице Booking, Date
 Total_price - цена, float
- ![](screens/booking1.png)
- ![](screens/booking2.png)
+###### ![](screens/booking1.png)
+###### ![](screens/booking2.png)
 
 ##### GUEST
 Таблица Guest состоит из следующих атрибутов:
@@ -29,8 +30,8 @@ id - создается по умолчанию, INT
 name - имя клиента, VARCHAR(50)
 email - электронная почта клиента, VARCHAR(50)
 phone_number - номер телефона клиента, VARCHAR(20)
-![](screens/Guest1.png)
-![](screens/Guest2.png)
+###### ![](screens/Guest1.png)
+###### ![](screens/Guest2.png)
 
 ##### HOTEL
 Таблица Hotel состоит из следующих атрибутов:
